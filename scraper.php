@@ -11,7 +11,7 @@ for($id = 1; $id <= 2; $id++)
 foreach($link2->find("//*[@id='results']")as $element){
 		if(is_object($element))
 		{
-			echo $url 		= $element->find("//*[@id="results"]/li[1]/h3/a",0);
+			echo $url 		= $element->find("//*[@id='results']/li[1]/h3/a");
 		}
 }	
 	 
