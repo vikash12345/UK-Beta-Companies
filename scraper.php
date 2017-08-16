@@ -30,7 +30,7 @@ require 'scraperwiki.php';
  require 'scraperwiki/simple_html_dom.php';
 //
 // // Read in a page
-for($i = 1; $i>2; 1++)
+for($i = 1; $i>2; $i++)
 {
  $html = scraperwiki::scrape("https://beta.companieshouse.gov.uk/search?q=a&page=".$i);
 //
