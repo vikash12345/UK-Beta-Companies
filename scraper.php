@@ -24,4 +24,19 @@
 // All that matters is that your final data is written to an SQLite database
 // called "data.sqlite" in the current working directory which has at least a table
 // called "data".
+
+
+require 'scraperwiki.php';
+ require 'scraperwiki/simple_html_dom.php';
+//
+// // Read in a page
+for($i = 1; $i>2; 1++)
+{
+ $html = scraperwiki::scrape("https://beta.companieshouse.gov.uk/search?q=a&page=".$i);
+//
+// // Find something on the page using css selectors
+ $dom = new simple_html_dom();
+ $dom->load($html);
+  echo $dom;
+}
 ?>
