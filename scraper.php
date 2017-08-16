@@ -13,7 +13,7 @@ foreach($link2->find("//*[@id='results']")as $element){
 	echo $element;
 		if(is_object($element))
 		{
-			echo $url 		= $element->find("//*[@id='results"']/li[1]/h3/a")->href;
+			echo $url 		= $element->find("//*[@id='results']/li[1]/h3/a")->href;
 		}
 }	
 	 
