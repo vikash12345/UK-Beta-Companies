@@ -15,8 +15,9 @@ foreach($link2->find("//*[@id='results']")as $element){
 		{
 			echo $url 		= $element->find("h3/a"[onclick]', 0)->onclick;
 		}
+		$url = str_get_html($str);
 		if($url){
-		echo $role =    = $url->find('dd[id="appointment-type-value1"]',0)->plaintext;
+		echo $role =    = $str->find('dd[id="appointment-type-value1"]',0)->plaintext;
 
 		}
 }	
