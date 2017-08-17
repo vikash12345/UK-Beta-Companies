@@ -13,7 +13,11 @@ foreach($link2->find("//*[@id='results']")as $element){
 	echo $element;
 		if(is_object($element))
 		{
-			echo $url 		= $element->find("//*[@id='results']/li[1]/h3/a",0)->href;
+			echo $url 		= $element->find("h3/a"[onclick]', 0)->onclick;
+		}
+		if($url){
+		echo $role =    = $url->find('dd[id="appointment-type-value1"]',0)->plaintext;
+
 		}
 }	
 	 
